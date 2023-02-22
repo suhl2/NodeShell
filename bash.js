@@ -2,6 +2,7 @@
 const pwd = require('./pwd');
 const ls = require('./ls');
 const cat = require('./cat');
+const curl = require('./curl');
 
 process.stdout.write('prompt > ');
 
@@ -15,6 +16,9 @@ process.stdin.on('data', (data) => {
     } else if(cmd.includes('cat')) {
         const fileName = cmd.slice(4);
         cat(fileName);
+    } else if(cmd.includes('curl')) {
+        const url = cmd.slice(5);
+        curl(url);
     } else {
         process.stdout.write("You typed: " + cmd);
     }

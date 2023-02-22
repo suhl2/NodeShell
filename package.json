@@ -1,8 +1,23 @@
 {
   "dependencies": {
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
   },
   "scripts": {
     "nodemon": "nodemon bash.js"
-  }
+  },
+  "name": "shell",
+  "version": "1.0.0",
+  "main": "bash.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suhl2/NodeShell.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suhl2/NodeShell/issues"
+  },
+  "homepage": "https://github.com/suhl2/NodeShell#readme",
+  "description": ""
 }
